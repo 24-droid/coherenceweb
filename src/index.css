@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.scrollbarHide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbarHide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Optional: Set default font and line-height */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  /* Default text color */
+  font-family: "Comic Neue", sans-serif; /* Use extended font */
+  font-display: swap; /* Allow text rendering before font is loaded */
+}

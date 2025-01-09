@@ -97,7 +97,6 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-important_text">
             What We Have Achieved
           </h2>
-          <marquee>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {highlights.map((highlight, index) => (
               <div
@@ -112,7 +111,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-          </marquee>
         </section>
 
         {/* Promotional Article Section */}

@@ -12,6 +12,8 @@ import Omniscient from "./pages/omniscient";
 import Blog from "./pages/blog";
 import Search from "./pages/search";
 import Searcht from "./pages/search";
+import Apply from "./pages/apply"
+import EmployeeDetail from "./pages/employeedetail";
 function App() {
   return (
     <Router>
@@ -31,6 +33,8 @@ function App() {
           <Route path="/omni" element={<Omniscient />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/search" element={<Searcht />} />
+          <Route path="/apply" element={<Apply />} />
+          <Route path="/employee/:name" element={<EmployeeDetail />} />
 
           {/* Store page route protected by PrivateRoute */}
 

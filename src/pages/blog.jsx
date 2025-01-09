@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Navbar from "../components/navbar/navbar";
 import Footer from "../components/navbar/footer";
+import Lottie from "react-lottie-player";
+import animationData from "../assets/Animation - 1736427451225.json"
 import {
   Search,
   Calendar,
@@ -72,11 +74,22 @@ export default function Blog() {
 
       {/* Hero Section */}
       <div className="bg-primary text-white py-20 px-8">
-        <div className="max-w-6xl mx-auto text-center">
+  
+        <div className="max-w-6xl mx-auto text-center flex flex-row">
+          <div className="flex flex-col items-center justify-center">
           <h1 className="text-5xl font-bold mb-6">Educational Insights</h1>
           <p className="text-xl max-w-2xl mx-auto">
             Discover the latest trends, research, and innovations in education
           </p>
+          </div>
+          <div className="w-full lg:w-1/3 flex justify-end overflow-hidden">
+            <Lottie
+              loop
+              animationData={animationData}
+              play
+              style={{ width: 200, height: 200 }}
+            />
+          </div>
         </div>
       </div>
 

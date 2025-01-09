@@ -2,6 +2,7 @@ import Navbar from "../components/navbar/navbar";
 import phone from "../assets/phone.svg";
 import location from "../assets/location.svg";
 import gmail from "../assets/gmail.svg";
+import Footer from "../components/navbar/footer";
 
 export default function ContactUs() {
   return (
@@ -12,7 +13,7 @@ export default function ContactUs() {
       {/* Main Content */}
       <main className="w-full mt-16 flex flex-col items-center gap-8">
         {/* Contact Form Section */}
-        <section className="w-full bg-terinary p-8 flex flex-col items-center gap-6">
+        <section className="w-full bg-blue p-8 flex flex-col items-center gap-6 border-b-2 border-gray-300">
           <p className="text-3xl font-bold text-important_text">Contact Us</p>
           <form className="w-full max-w-3xl flex flex-col gap-4">
             {/* Name */}
@@ -23,7 +24,7 @@ export default function ContactUs() {
               <input
                 type="text"
                 id="name"
-                placeholder="Your Name"
+                placeholder="John Doe"
                 className="px-4 py-2 rounded-md border-2 border-gray-300 focus:ring-2 focus:ring-primary outline-none"
                 required
               />
@@ -36,7 +37,7 @@ export default function ContactUs() {
               <input
                 type="email"
                 id="email"
-                placeholder="Your Email Address"
+                placeholder="johndoe@gmail.com"
                 className="px-4 py-2 rounded-md border-2 border-gray-300 focus:ring-2 focus:ring-primary outline-none"
                 required
               />
@@ -49,7 +50,7 @@ export default function ContactUs() {
               <input
                 type="tel"
                 id="phone"
-                placeholder="Your Phone Number"
+                placeholder="1234567890"
                 className="px-4 py-2 rounded-md border-2 border-gray-300 focus:ring-2 focus:ring-primary outline-none"
                 required
               />
@@ -86,12 +87,14 @@ export default function ContactUs() {
               ></textarea>
             </div>
             {/* Submit Button */}
+            <div className="flex items-center justify-center">
             <button
               type="submit"
-              className="bg-primary text-white font-bold py-2 px-4 rounded-lg hover:shadow-md focus:ring-2 focus:ring-primary"
+              className="bg-primary w-40 text-white font-bold py-2 px-4 rounded-lg hover:shadow-md focus:ring-2 focus:ring-primary"
             >
               Send Message
             </button>
+            </div>
           </form>
         </section>
 
@@ -124,7 +127,7 @@ export default function ContactUs() {
         </section>
 
         {/* Google Maps Section */}
-        <section className="w-full flex flex-col items-center">
+        <section className="w-full flex flex-col items-center px-8">
           <p className="text-2xl font-bold mb-4 text-important_text">
             Our Location
           </p>
@@ -138,6 +141,7 @@ export default function ContactUs() {
           ></iframe>
         </section>
       </main>
+      <Footer />
     </section>
   );
 }

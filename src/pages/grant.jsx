@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/navbar/navbar";
 import { motion } from "framer-motion";
 import { ChevronRight, Download, Upload, CheckCircle } from "lucide-react";
+import Footer from "../components/navbar/footer";
 
 const GrantsPage = () => {
   const testimonials = [
@@ -195,6 +196,7 @@ const GrantsPage = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 };

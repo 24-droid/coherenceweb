@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../components/navbar/navbar";
+import Footer from "../components/navbar/footer";
 
 export default function AssociationsPage() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -156,6 +157,7 @@ export default function AssociationsPage() {
           ))}
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

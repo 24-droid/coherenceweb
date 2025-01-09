@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Search, Sliders, Clock } from "lucide-react";
 import Navbar from "../components/navbar/navbar";
+import Footer from "../components/navbar/footer";
 
 const SearchFilters = () => (
   <div className="w-full  px-4 py-2 border-b border-gray-200">
@@ -109,6 +110,7 @@ export default function Searcht() {
           <SearchResult />
         </div>
       </main>
+      <Footer />
     </section>
   );
 }

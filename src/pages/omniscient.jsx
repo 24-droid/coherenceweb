@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/navbar/navbar";
+import Footer from "../components/navbar/footer";
 import {
   BookOpen,
   Book,
@@ -262,6 +263,7 @@ export default function Omniscient() {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }

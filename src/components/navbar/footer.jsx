@@ -1,10 +1,11 @@
-
 import React from "react";
+import { Search } from "lucide-react";
 import logo from "../../assets/logo.svg";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="fixed bottom-0 left-0  w-full h-16 bg-primary flex items-center justify-between px-4">
+    <footer className="relative bottom-0 left-0 mb-0 w-full h-16 bg-primary flex items-center justify-between px-4">
       {/* Left side - Logo and Brand */}
       <div className="flex items-center gap-8 py-8 text-white">
         <img
@@ -17,24 +18,26 @@ export default function Footer() {
         </p>
       </div>
 
-        <a
-          href="/omni"
-          className="text-lg font-bold hover:text-secondary transition-colors duration-200"
-        >
-          Omni
-        </a>
-        <a
-          href="/init"
+      {/* Right side - Navigation Links */}
+      <div className="flex items-center gap-6 py-8 text-white">
+        <Link
+          to="/init"
           className="text-lg font-bold hover:text-secondary transition-colors duration-200"
         >
           Init
-        </a>
-        <a
-          href="/search"
+        </Link>
+        <Link
+          to="/omni"
+          className="text-lg font-bold hover:text-secondary transition-colors duration-200"
+        >
+          Omni
+        </Link>
+        <Link
+          to="/search"
           className="text-lg font-bold hover:text-secondary transition-colors duration-200"
         >
           Search
-        </a>
+        </Link>
       </div>
     </footer>
   );

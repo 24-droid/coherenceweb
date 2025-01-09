@@ -1,5 +1,7 @@
 import Navbar from "../components/navbar/navbar";
 import Footer from "../components/navbar/footer";
+import Book from "../assets/image.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
   const highlights = [
@@ -37,6 +39,7 @@ export default function Home() {
         "Healthcare is a privilege for many, not a right. We are working to provide affordable healthcare solutions globally.",
     },
   ];
+  const navigate=useNavigate();
 
   return (
     <section className="w-full h-full flex flex-col items-center gap-8 overflow-x-hidden scrollbar-hide bg-highlight_background">
@@ -56,10 +59,12 @@ export default function Home() {
             difference.
           </p>
           <div className="flex gap-4 mt-6">
-            <button className="bg-secondary hover:bg-Yellow hover:text-black text-white font-bold py-2 px-6 rounded-lg shadow-lg hover:shadow-xl">
+            <button className="bg-secondary hover:bg-Yellow hover:text-black text-white font-bold py-2 px-6 rounded-lg shadow-lg hover:shadow-xl"
+            onClick={()=>{navigate("/about")}}>
               Learn More
             </button>
-            <button className="bg-white hover:bg-Yellow hover:text-black hover:border-0 text-secondary font-bold py-2 px-6 rounded-lg shadow-lg hover:shadow-xl ">
+            <button className="bg-white hover:bg-Yellow hover:text-black hover:border-0 text-secondary font-bold py-2 px-6 rounded-lg shadow-lg hover:shadow-xl "
+            onClick={()=>{navigate("/contact")}}>
               Contact Us
             </button>
           </div>
@@ -92,6 +97,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-important_text">
             What We Have Achieved
           </h2>
+          <marquee>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {highlights.map((highlight, index) => (
               <div
@@ -106,6 +112,7 @@ export default function Home() {
               </div>
             ))}
           </div>
+          </marquee>
         </section>
 
         {/* Promotional Article Section */}
@@ -121,16 +128,17 @@ export default function Home() {
             <p className="text-sm text-gray-300">
               By <strong>John Doe</strong> | Published: Dec 20, 2024
             </p>
-            <button className="bg-secondary hover:text-black hover:bg-Yellow text-white font-bold py-2 px-6 rounded-lg shadow-lg hover:shadow-xl">
+            <button className="bg-secondary hover:text-black hover:bg-Yellow text-white font-bold py-2 px-6 w-40 rounded-lg shadow-lg hover:shadow-xl"
+            onClick={()=>{navigate("/omni")}}>
               Read More
             </button>
           </div>
           {/* Right Image */}
           <div>
             <img
-              src="https://via.placeholder.com/600x400?text=Promotional+Article"
+              src={Book}
               alt="Promotional Article"
-              className="rounded-lg shadow-lg w-full"
+              className="rounded-lg shadow-lg w-[40%] mt-3"
             />
           </div>
         </section>
@@ -142,7 +150,8 @@ export default function Home() {
             Become a part of a movement that's changing the world. Whether you
             want to volunteer, contribute, or collaborate, your support matters.
           </p>
-          <button className="bg-secondary hover:text-black hover:bg-Yellow text-white font-bold py-2 px-6 rounded-lg shadow-lg hover:shadow-xl">
+          <button className="bg-secondary hover:text-black hover:bg-Yellow text-white font-bold py-2 px-6 rounded-lg shadow-lg hover:shadow-xl"
+          onClick={()=>{navigate("/grant")}}>
             Learn More
           </button>
         </section>

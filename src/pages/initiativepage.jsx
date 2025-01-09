@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../components/navbar/navbar";
+import Footer from "../components/navbar/footer";
 
 export default function InitiativesPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -201,6 +202,7 @@ export default function InitiativesPage() {
             ))}
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

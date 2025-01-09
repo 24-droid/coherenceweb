@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../components/navbar/navbar";
+import Footer from "../components/navbar/footer";
 import {
   Search,
   Calendar,
@@ -235,6 +236,7 @@ export default function Blog() {
           </button>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

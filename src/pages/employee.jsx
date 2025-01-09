@@ -1,4 +1,5 @@
 import Navbar from "../components/navbar/navbar";
+import Footer from "../components/navbar/footer";
 
 export default function Employee() {
   const leadershipTeam = [
@@ -155,6 +156,7 @@ export default function Employee() {
           </div>
         </section>
       </main>
+      <Footer />
     </section>
   );
 }

@@ -1,4 +1,5 @@
 import Navbar from "../components/navbar/navbar";
+import Footer from "../components/navbar/footer";
 
 export default function CareerPage() {
   const positions = [
@@ -146,6 +147,7 @@ export default function CareerPage() {
           </section>
         )}
       </main>
+      <Footer />
     </section>
   );
 }

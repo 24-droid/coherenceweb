@@ -1,6 +1,9 @@
 import Navbar from "../components/navbar/navbar";
+import Footer from "../components/navbar/footer";
+import { useNavigate } from "react-router-dom";
 
 export default function AboutUs() {
+  const navigate = useNavigate();
   return (
     <section className="w-full h-full flex flex-col items-center gap-8 overflow-x-hidden scrollbar-hide bg-highlight_background">
       {/* Navbar */}
@@ -143,11 +146,13 @@ export default function AboutUs() {
             Be a part of our journey and help us create a brighter future for
             everyone.
           </p>
-          <button className="bg-secondary hover:bg-Yellow hover:text-black font-bold py-2 px-6 rounded-lg hover:shadow-lg">
+          <button className="bg-secondary hover:bg-Yellow hover:text-black font-bold py-2 px-6 rounded-lg hover:shadow-lg
+           " onClick={()=>{navigate("/contact")}}>
             Contact Us
           </button>
         </section>
       </main>
+      <Footer />
     </section>
   );
 }

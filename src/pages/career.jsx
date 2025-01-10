@@ -32,7 +32,7 @@ export default function CareerPage() {
           Find your dream job and be part of an innovative, growing team.
         </p>
         </div>
-        <div className="w-full lg:w-1/3 flex justify-end overflow-hidden">
+        <div className="w-full lg:w-1/3 flex justify-end overflow-hidden ">
             <Lottie
               loop
               animationData={animationData}

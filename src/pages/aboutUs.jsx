@@ -22,7 +22,7 @@ export default function AboutUs() {
         </section>
 
         {/* Our Foundation Story Section */}
-        <section className="w-full bg-primary text-white p-8 flex flex-col gap-4">
+        <section className="w-full bg-primary text-white p-8 flex flex-col items-center gap-4">
           <h2 className="text-3xl font-bold text-center w-full">
             Our Foundation Story
           </h2>
@@ -34,6 +34,11 @@ export default function AboutUs() {
             began with a simple mission: to make a difference, one step at a
             time.
           </p>
+          <button className="bg-secondary hover:bg-Yellow hover:text-black w-40 font-bold py-2 px-6 rounded-lg hover:shadow-lg
+           " onClick={()=>{navigate("/employee")}}>
+            Know More
+          </button>
+          
         </section>
 
         {/* Achievements and Milestones Section */}

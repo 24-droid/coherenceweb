@@ -1,6 +1,8 @@
 import Navbar from "../components/navbar/navbar";
 import Footer from "../components/navbar/footer";
 import { Link } from "react-router-dom"; // Correct import for Link
+import Lottie from "react-lottie-player";
+import animationData from "../assets/Animation - 1736496362955.json"
 
 export default function CareerPage() {
   const positions = [
@@ -21,13 +23,23 @@ export default function CareerPage() {
       <Navbar />
 
      
-      <section className="w-full h-72 mt-20 bg-cover bg-center flex flex-col items-center justify-center text-white px-4 bg-highlight_background">
+      <section className="w-full h-72 mt-20 bg-cover bg-center flex flex-row items-center justify-center text-white px-4 bg-highlight_background">
+        <div className="text-center">
         <h1 className="text-5xl font-bold text-black px-6 py-2 rounded-lg">
           Careers at Our Company
         </h1>
         <p className="text-lg font-medium mt-2 bg-black bg-opacity-50 px-4 py-2 rounded-lg">
           Find your dream job and be part of an innovative, growing team.
         </p>
+        </div>
+        <div className="w-full lg:w-1/3 flex justify-end overflow-hidden">
+            <Lottie
+              loop
+              animationData={animationData}
+              play
+              style={{ width: 200, height: 200 }}
+            />
+          </div>
       </section>
 
      

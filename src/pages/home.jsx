@@ -49,7 +49,7 @@ export default function Home() {
       {/* Main Content */}
       <main className="w-full mt-16 flex flex-col items-center gap-12">
         {/* Hero Section */}
-        <section className="w-full bg-important_text text-white p-8 flex flex-col items-center gap-4">
+        <section className="w-full bg-primary text-white p-8 flex flex-col items-center gap-4">
           <h1 className="text-5xl font-bold text-center">
             Empowering Communities, Shaping Futures
           </h1>

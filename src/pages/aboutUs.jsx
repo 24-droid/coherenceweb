@@ -10,19 +10,19 @@ export default function AboutUs() {
       <Navbar />
 
       {/* Main Content */}
-      <main className="w-full mt-20 flex flex-col gap-12">
+      <main className="w-full mt-16 flex flex-col gap-12">
         {/* Hero Section */}
-        <section className="w-full bg-highlight_background p-8 flex flex-col items-center gap-4">
-          <h1 className="text-4xl font-bold text-center w-full ">
+        <section className="w-full bg-primary p-8 flex flex-col items-center gap-4">
+          <h1 className="text-4xl font-bold text-center w-full text-white ">
             About Persperence Envision Pvt Ltd.
           </h1>
-          <p className="text-lg text-center leading-relaxed">
+          <p className="text-lg text-center leading-relaxed text-gray-200">
             Learn more about our journey, achievements, and future aspirations.
           </p>
         </section>
 
         {/* Our Foundation Story Section */}
-        <section className="w-full bg-primary text-white p-8 flex flex-col items-center gap-4">
+        <section className="w-full bg-highlight_background text-black p-8 flex flex-col items-center gap-4">
           <h2 className="text-3xl font-bold text-center w-full">
             Our Foundation Story
           </h2>
@@ -161,3 +161,57 @@ export default function AboutUs() {
     </section>
   );
 }
+// import Navbar from "../components/navbar/navbar";
+// import Footer from "../components/navbar/footer";
+// import { useNavigate } from "react-router-dom";
+
+// export default function AboutUs() {
+//   const navigate = useNavigate();
+//   return (
+//     <section className="w-full h-full flex flex-col items-center gap-8 overflow-x-hidden scrollbar-hide">
+//       {/* Navbar */}
+//       <Navbar />
+
+//       {/* Main Content */}
+//       <main className="w-full mt-16 flex flex-col gap-12">
+//         {/* Hero Section */}
+//         <section className="w-full bg-primary p-8 flex flex-col items-center gap-4">
+//           <h1 className="text-4xl font-bold text-center w-full text-white">
+//             About Persperence Envision Pvt Ltd.
+//           </h1>
+//           <p className="text-lg text-center leading-relaxed text-gray-200">
+//             Learn more about our journey, achievements, and future aspirations.
+//           </p>
+//         </section>
+
+//         {/* Our Foundation Story Section */}
+//         <section className="w-full bg-primary text-white p-8 flex flex-col items-center gap-4">
+//           <h2 className="text-3xl font-bold text-center w-full">
+//             Our Foundation Story
+//           </h2>
+//           <p className="text-lg leading-relaxed">
+//             Persperence Envision Pvt Ltd. was founded in 2010 with the vision of
+//             empowering communities through innovative solutions. What started as
+//             a small team of like-minded individuals has grown into a global
+//             organization dedicated to solving real-world challenges. Our journey
+//             began with a simple mission: to make a difference, one step at a
+//             time.
+//           </p>
+//           <button
+//             className="bg-secondary hover:bg-yellow hover:text-black w-40 font-bold py-2 px-6 rounded-lg hover:shadow-lg"
+//             onClick={() => {
+//               navigate("/employee");
+//             }}
+//           >
+//             Know More
+//           </button>
+//         </section>
+
+//         {/* Other sections remain unchanged */}
+
+//       </main>
+//       <Footer />
+//     </section>
+//   );
+// }
+
